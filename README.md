@@ -1,16 +1,16 @@
 # mcd-bash
 A very simple bash tool for creating and cd'ing into folders you make automatically.
 
-![Bash Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/demo.png)
-![PowerShell Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/demo_ps.png)
+![Bash Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/assets/demo.png)
+![Fish Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/assets/demo_fish.png)
+![Zsh Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/assets/demo_zsh.png)
+![PowerShell Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/assets/demo_ps.png)
 
 # Supported Shells
-|Shell     |Supported?|
-|----------|----------|
-|bash      |Yes       |
-|fish      |No        |
-|zsh       |No        |
-|PowerShell|Yes       |
+- Bash
+- Fish
+- Zsh
+- PowerShell
 
 # Why?
 Because most of the time I'm making folders I want to `cd` into them immediately, and you do too probably.
