@@ -52,5 +52,6 @@ cd mcd-bash
 # Using docker
 git pull origin main
 docker build -t mcd-bash .
-docker run --restart unless-stopped -p 4040:3000 mcd-bash
+docker run --name mcd-install --restart unless-stopped -p 4040:3000 mcd-bash
+docker restart mcd-install
 ```
