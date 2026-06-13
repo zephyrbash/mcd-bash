@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-UTILS_FILE="$HOME/.shell-sh.sh"
+UTILS_FILE="$HOME/.shell-mcd.sh"
 
 cat > "$UTILS_FILE" <<'EOF'
 mcd() {
@@ -14,9 +14,9 @@ mcd() {
 }
 EOF
 
-SOURCE_LINE='[ -f "$HOME/.shell-sh.sh" ] && source "$HOME/.shell-sh.sh"'
+SOURCE_LINE='[ -f "$HOME/.shell-mcd.sh" ] && source "$HOME/.shell-mcd.sh"'
 
-if ! grep -Fq '.shell-sh.sh' "$HOME/.bashrc"; then
+if ! grep -Fq '.shell-mcd.sh' "$HOME/.bashrc"; then
     {
         echo
         echo "# MCD"

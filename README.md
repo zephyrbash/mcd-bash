@@ -1,7 +1,16 @@
 # mcd-bash
 A very simple bash tool for creating and cd'ing into folders you make automatically.
 
-![Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/demo.png)
+![Bash Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/demo.png)
+![PowerShell Demo](https://raw.githubusercontent.com/zephyrbash/mcd-bash/main/demo_ps.png)
+
+# Supported Shells
+|Shell     |Supported?|
+|----------|----------|
+|bash      |Yes       |
+|fish      |No        |
+|zsh       |No        |
+|PowerShell|Yes       |
 
 # Why?
 Because most of the time I'm making folders I want to `cd` into them immediately, and you do too probably.
@@ -15,13 +24,20 @@ Installing from my site is the easiest way.
 curl -fsSL https://mcd.zephyrbash.dev/install.sh | bash
 ```
 
+or for PowerShell:
+
+```powershell
+powershell -c "irm https://mcd.zephyrbash.dev/install.ps1 | iex"
+```
+
 ## Method 2: The safest but long way
 
 Clone the repo then run the install file directly.
 
 ```bash
 git clone https://github.com/zephyrbash/mcd-bash.git
-sh ./mcd-bash/install.sh
+sh ./mcd-bash/install.sh # Bash
+./mcd-bash/install.ps1 # PowerShell
 ```
 
 # Deploying install instance
@@ -34,6 +50,7 @@ git clone https://github.com/zephyrbash/mcd-bash.git
 cd mcd-bash
 
 # Using docker
+git pull origin main
 docker build -t mcd-bash .
 docker run --restart unless-stopped -p 4040:3000 mcd-bash
 ```
